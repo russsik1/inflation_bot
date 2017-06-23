@@ -2,8 +2,8 @@ import os
 import telebot
 from flask import Flask, request
 from telebot import types
-from data import warningMessage, inflationBot_token, start_text, help_text, countries_list, example_text, not_ready_text
-from functions import CalculateInflationRate, CalculatePriceChange, CalculateValueChange, dateParser, countryParser
+from data import *
+from functions import *
 
 bot = telebot.TeleBot(inflationBot_token)
 server = Flask(__name__)
